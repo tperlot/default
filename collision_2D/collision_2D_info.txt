@@ -1,0 +1,9 @@
+This document will probably be edited later when I want to pretend to be a mathematician.  If you have questions go ahead and make an issue so I can address it.  I will use them as motivation to add to this document.
+
+This was quickly edited to have the Collision namespace.  You will likely want to rename it!
+
+This was designed because I needed to make my own buttons and needed a way to pick up mouseover events.  If Linux distributions provide this it's in an unclear way.  Searching through documentation was taking longer than I thought it would take to write the code myself and I would eventually need to do 2D collisions anyway.
+
+Collision detection uses the points of a model (in this case a glm::vec3 array) and compares to a second model to see if any points are within the object you're comparing to.  I am not a mathematician (struggled through calc 2) so I don't want to give an explanation at the moment of writing.  I used a couple of different explanations on YouTube and incomplete IDGAF licensed code in order to piece together what was going on and create this.
+
+You may notice I left a lot of comments in.  Some lines are left in from when I was trying to diagnose issues, I thought they might be helpful if someone wants to better understand how the collisions are being evaluated.  Others are just notes to explain what is going on at a particular point or to mark the end of a particular function for clarity.

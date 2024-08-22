@@ -1,0 +1,12 @@
+This document will probably be edited later.  If you have questions go ahead and make an issue so I can address it.  I will use them as motivation to add to this document.
+
+This was quickly edited to have the Collision namespace.  You will likely want to rename it!
+The window naming was commented out just because it was part of my own projects naming scheme.  I will put a generic name there in the future.
+
+I wanted immediate mode UI because it sounded superior to other designs in almost all use cases.  This was designed because I thought Dear ImGui was a bit overkill and didn't allow for easy button customization.
+
+Immediate mode UI minimizes the number of times you need to draw to screen and can be configured to minimize the number of points you need to check through (using bounding boxes) in order to see if an object is being hovered over or being clicked.  This implementation is based on Casey Muratori's explanation available on youtube (https://www.youtube.com/watch?v=Z1qyvQsjK5Y).
+
+After trying to prep this one I realized I have other files set up in here.  The concept should be understandable even with that.  I may add the converter and windowing into this repo in the future.  I just wanted to get things that are a bit more difficult for people to figure out on their own out first.  The converter is just some math for changing pixel coordinates and rgba values to Vulkan's values, -1 to 1 and 0 to 1 respectively.  The window is your basic GLFW window setup.
+
+I kept the fmt::print stuff uncommented so that I could diagnose problems with button numbers/IDs elsewhere in my code, but they are best left on until you understand the code anyway.
