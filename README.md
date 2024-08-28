@@ -12,4 +12,4 @@
 
   Since I work with Vulkan most things use glm.
 
-  While I considered writing my own windowing I opted to go for GLFW with most things as it includes some basic keyboard and mouse input that isn't well documented on the Linux side of things.  If someone has suggestions for input devices I would like to move away from external libraries where possible.
+  While I considered writing my own windowing I opted to go for GLFW with most things as it includes some basic keyboard and mouse input, which Linux doesn't document very well.  If someone has suggestions for input devices I would like to move away from external libraries where possible.
